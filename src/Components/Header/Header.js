@@ -6,12 +6,12 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-           <h2 className='text-info'>Speedo</h2>
+           
        <div className='container-fluid d-flex justify-content-between'>
        <div>
-        <Navbar bg="dark" variant="dark">
+        <Navbar>
     <Container>
-    <Navbar.Brand href="/">Navbar</Navbar.Brand>
+    <Navbar.Brand className='Nav-title' href="/">Speedo</Navbar.Brand>
     <Nav className="me-auto navbar">
       <Link to="/">Home</Link>
       <Link to="/services">Services</Link>
@@ -24,8 +24,9 @@ const Header = () => {
     </Container>
   </Navbar>
         </div>
-        <div>
-            <h2 className='text-info'>Hi</h2>
+        <div className='mt-3'>
+        <input className='input' type="search"  placeholder='search here' />
+        <button className='btn-info ms-2 rounded text-white'>Search here</button>
         </div>
        </div>
   

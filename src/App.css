@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  
+  background: url("./Components/images/car2.jpg") no-repeat center center fixed;
+  background-size:auto;
+  opacity:1.1; 
 }
 
 
