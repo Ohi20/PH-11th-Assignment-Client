@@ -14,7 +14,7 @@ Save those you want to see.<br></br>
 Tell your friends what’s good. </h2>
                 </div>
                 <div>
-                    <button>Get Started</button>
+                    <button className='btn-info rounded text-white'>Get Started</button>
                 </div>
 
             </div>

@@ -7,12 +7,12 @@ const Services = () => {
     
     return (
        
-        <div>
+        <div className='col-12'>
             
             {
-                services.map(service => <div className='container-fluid row' key={service._id}>
+                services.map(service => <div className='container-fluid col-12' key={service._id}>
                     
-                    <div className='col-4'>
+                    <div className='col-12'>
                     <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={service.image} />
   <Card.Body>
