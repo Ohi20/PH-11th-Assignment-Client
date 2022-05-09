@@ -1,0 +1,12 @@
+.blogs{
+    font-weight: 700;
+    opacity: 13;
+    color: ghostwhite;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+.blogs p{
+    font-size: 20px;
+}
