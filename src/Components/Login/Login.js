@@ -25,7 +25,7 @@ const Login = () => {
         <div>
             <div className="container my-5 pb-5">
   <section id="content">
-    <form action="">
+    <form  action="">
       <h1>Login Form</h1>
       <div>
         <input type="text" placeholder="Username" required="" id="username" />

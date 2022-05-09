@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../Footer/Footer';
 import './Register.css';
 
 const Register = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleEmailblur = event => {
+        setEmail(event.target.value);
+    }
+
+    const handleformsubmit = event => {
+        console.log('clicked');
+    }
+    const handlePasswordblur = event => {
+       setPassword(event.target.value);
+    }
     return (
         <div>
             <div className="container my-5 pb-5">
   <section id="content">
-    <form action="">
+    <form onSubmit={handleformsubmit} action="">
       <h1>Register</h1>
+      
       <div>
-        <input type="text" placeholder="Username" required="" id="username" />
+        <input onBlur={handleEmailblur} type="email" placeholder="Email" required="" id="email" />
       </div>
       <div>
-        <input type="email" placeholder="Email" required="" id="email" />
-      </div>
-      <div>
-        <input type="password" placeholder="Password" required="" id="password" />
+        <input onBlur={handlePasswordblur} type="password" placeholder="Password" required="" id="password" />
       </div>
       <div>
         <input type="submit" value="Register" />
