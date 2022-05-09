@@ -5,7 +5,7 @@ import useServices from '../Hooks/useServices';
 const Inventory = () => {
     const [services, setServices] = useServices();
     return (
-        <div>
+        <div className='container'>
 {
 services.map(service => <div className='container-fluid d-flex' key={service._id}>
             <CardGroup>
