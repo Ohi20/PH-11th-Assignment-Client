@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+import './Login.css';
 
 const Login = () => {
     const handleAdduser = event => {
@@ -23,28 +23,31 @@ const Login = () => {
     }
     return (
         <div>
-            <div className='container w-50 mx-auto'>
-            
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
-            <Form onSubmit={handleAdduser}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control  type="email" placeholder="Enter email" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control  type="password" placeholder="Password" required />
-                </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
-                    Login
-                </Button>
-            </Form>
-            
-            <p>New to Genius Car? <Link to="/register" className='text-info pe-auto text-decoration-none' >Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-info pe-auto text-decoration-none' >Reset Password</button> </p>
-            
-            
-        </div>
+            <div className="container my-5 pb-5">
+  <section id="content">
+    <form action="">
+      <h1>Login Form</h1>
+      <div>
+        <input type="text" placeholder="Username" required="" id="username" />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" required="" id="password" />
+      </div>
+      <div>
+        <input type="submit" value="Log in" />
+        <a href="/login">Loging with Email?</a>
+        <a href="/register">Register</a>
+      </div>
+    </form>
+    
+  </section>
+</div>
+<Footer></Footer>
         </div>
     );
+    
 };
+
+
 
 export default Login;

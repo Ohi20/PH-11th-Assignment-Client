@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div>
            
-       <div className='container-fluid d-flex justify-content-between'>
+       <div className='container-lg container-sm d-flex justify-content-between'>
        <div>
         <Navbar>
     <Container>
@@ -24,7 +24,7 @@ const Header = () => {
     </Container>
   </Navbar>
         </div>
-        <div className='mt-3'>
+        <div className='mt-3 '>
         <input className='input' type="search"  placeholder='search here' />
         <button className='btn-info ms-2 rounded text-white'>Search here</button>
         </div>
