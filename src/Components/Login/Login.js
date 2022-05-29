@@ -9,7 +9,7 @@ const Login = () => {
         const email = event.target.name.value;
         const user = {name, email};
         // send data to server
-        fetch('http://localhost:5000/user',{
+        fetch('https://vast-wildwood-08816.herokuapp.com/user',{
             mathod: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,6 +37,9 @@ const Login = () => {
         <input type="submit" value="Log in" />
         <a href="/login">Loging with Email?</a>
         <a href="/register">Register</a>
+        <a href="/register">Google sign in</a>
+        <a href="/register">Github sign in</a>
+        <a href="/register">Facebook sign in</a>
       </div>
     </form>
     
